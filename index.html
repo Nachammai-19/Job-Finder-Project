@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobFinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<nav>
+    <div class ="logo">JobFinder</div>
+
+    <ul>
+        <li><a href ="#home">home</a></li>
+        <li><a href ="#jobs">Jobs</a></li>
+        <li><a href ="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <h1>Find Your Next Opportunity</h1>
+
+        <p>
+            Discover jobs that match your skills and start your career journey.
+        </p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for a job title">
+            <input type="text" placeholder="Location">
+            <button id="search-button">Search Jobs</button>
+            <button id="clear-button">Clear</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="jobs-section" id="jobs">
+
+    <div class="section-heading">
+        <h2>Featured Jobs</h2>
+        <p>Explore opportunities that match your skills.</p>
+    </div>
+
+    <div class="job-container">
+
+        <div class="job-card" data-job="frontend">
+            <h3>Frontend Developer</h3>
+            <p class="company">Tech Solutions</p>
+            <p>📍 Chennai</p>
+            <p>💼 Full Time</p>
+            <p>Skills: HTML, CSS, JavaScript</p>
+            <button class="view-details" data-job="frontend">View Details</button>
+        </div>
+
+        <div class="job-card" data-job="java">
+            <h3>Java Developer</h3>
+            <p class="company">Digital Systems</p>
+            <p>📍 Bangalore</p>
+            <p>💼 Full Time</p>
+            <p>Skills: Java, SQL</p>
+            <button class="view-details" data-job="java">View Details</button>
+        </div>
+
+        <div class="job-card" data-job="sql">
+            <h3>SQL Developer</h3>
+            <p class="company">DataWorks</p>
+            <p>📍 Chennai</p>
+            <p>💼 Full Time</p>
+            <p>Skills: SQL, Database</p>
+            <button class="view-details" data-job="sql">View Details</button>
+        </div>
+
+        <p id="no-jobs" class="no-jobs">No jobs found.</p>
+    </div>
+    
+</section>
+
+<section class="job-details" id="job-details">
+
+    <div class="details-content">
+
+    
+    </div>
+
+</section>
+
+<section class="application-section" id="application">
+    <div class="application-content">
+        <h2>Apply for this Job</h2>
+        <p>Fill in your details to submit your application.</p>
+
+        <form id="application-form">
+            <input type="text" id="applicant-name" placeholder="Full Name">
+
+            <input type="email" id="applicant-email" placeholder="Email Address">
+
+            <input type="tel" id="applicant-phone" placeholder="Phone Number">
+
+            <textarea id="cover-note" placeholder="Why are you suitable for this job?"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <p id="application-message"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+
+</html>
